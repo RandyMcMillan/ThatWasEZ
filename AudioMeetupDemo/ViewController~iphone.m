@@ -29,6 +29,38 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)
+toInterfaceOrientation
+{
+    // Return YES for supported orientations
+    if (toInterfaceOrientation == UIInterfaceOrientationLandscapeRight) {
+        return YES;
+    }
+    
+    if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft) {
+        return YES;
+    }
+    
+    if (toInterfaceOrientation == UIInterfaceOrientationPortrait) {
+        return YES;
+    }
+    
+    if (toInterfaceOrientation ==
+        UIInterfaceOrientationPortraitUpsideDown) {
+        return YES;
+    } else {return NO; }
+} /* shouldAutorotateToInterfaceOrientation */
+
+- (BOOL)didAutorotateToInterfaceOrientation:(UIInterfaceOrientation)
+currentInterfaceOrientation
+{
+    NSLog(@"did auto rotate");
+    return YES;
+}
+
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
