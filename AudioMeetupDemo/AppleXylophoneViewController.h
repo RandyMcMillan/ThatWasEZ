@@ -21,6 +21,8 @@
     IBOutlet UILabel *label3;
     IBOutlet UILabel *label4;
     IBOutlet UILabel *label5;
+    
+    IBOutlet UIImageView *imageView;
  
 }
 
