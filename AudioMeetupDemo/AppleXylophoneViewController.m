@@ -30,7 +30,7 @@
     
     
     
-    UIImageView *buttonImageView = [[ UIImageView alloc ] initWithImage:[ UIImage originalSizeImageWithPDFNamed:@"YingYang.pdf"  ]];
+    UIImageView *buttonImageView = [[ UIImageView alloc ] initWithImage:[ UIImage originalSizeImageWithPDFNamed:@"ThatWasEZ.pdf"  ]];
     //buttonImageView.center = self.view.center;
     //[ self.view addSubview:imageView ];
     //[ buttonImageView release ];

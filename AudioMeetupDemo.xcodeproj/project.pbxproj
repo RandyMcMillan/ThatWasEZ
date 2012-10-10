@@ -14,6 +14,14 @@
 		4867317A162546F700DBAA56 /* UIImage+PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 48673175162546F700DBAA56 /* UIImage+PDF.m */; };
 		4867317B162546F700DBAA56 /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 48673177162546F700DBAA56 /* UIView+Image.m */; };
 		48673181162547DF00DBAA56 /* YingYang.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48673180162547DF00DBAA56 /* YingYang.pdf */; };
+		4867318716254E7900DBAA56 /* ThatWasEZ.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4867318616254E7900DBAA56 /* ThatWasEZ.pdf */; };
+		4867318A16254FC800DBAA56 /* click_0.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4867318916254FC800DBAA56 /* click_0.m4a */; };
+		4867318C1625500C00DBAA56 /* click_1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4867318B1625500C00DBAA56 /* click_1.m4a */; };
+		486731911625504800DBAA56 /* click_2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4867318D1625504800DBAA56 /* click_2.m4a */; };
+		486731921625504800DBAA56 /* click_3.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4867318E1625504800DBAA56 /* click_3.m4a */; };
+		486731931625504800DBAA56 /* click_4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4867318F1625504800DBAA56 /* click_4.m4a */; };
+		486731941625504800DBAA56 /* click_5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 486731901625504800DBAA56 /* click_5.m4a */; };
+		4867319616255B7D00DBAA56 /* click.caf in Resources */ = {isa = PBXBuildFile; fileRef = 4867319516255B7D00DBAA56 /* click.caf */; };
 		487473BD1624F7C7007B9D2C /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 487473BB1624F7C7007B9D2C /* MainWindow-iPad.xib */; };
 		4C219D5313AD0F6C004362DE /* vib_0.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 4C219D5213AD0F6C004362DE /* vib_0.aiff */; };
 		4C227ACB13A6E4AB0054213E /* AppleXylophoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C227AC913A6E4AB0054213E /* AppleXylophoneViewController.m */; };
@@ -53,6 +61,14 @@
 		48673176162546F700DBAA56 /* UIView+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Image.h"; sourceTree = "<group>"; };
 		48673177162546F700DBAA56 /* UIView+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Image.m"; sourceTree = "<group>"; };
 		48673180162547DF00DBAA56 /* YingYang.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = YingYang.pdf; sourceTree = "<group>"; };
+		4867318616254E7900DBAA56 /* ThatWasEZ.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ThatWasEZ.pdf; sourceTree = SOURCE_ROOT; };
+		4867318916254FC800DBAA56 /* click_0.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = click_0.m4a; sourceTree = SOURCE_ROOT; };
+		4867318B1625500C00DBAA56 /* click_1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = click_1.m4a; sourceTree = SOURCE_ROOT; };
+		4867318D1625504800DBAA56 /* click_2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = click_2.m4a; sourceTree = SOURCE_ROOT; };
+		4867318E1625504800DBAA56 /* click_3.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = click_3.m4a; sourceTree = SOURCE_ROOT; };
+		4867318F1625504800DBAA56 /* click_4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = click_4.m4a; sourceTree = SOURCE_ROOT; };
+		486731901625504800DBAA56 /* click_5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = click_5.m4a; sourceTree = SOURCE_ROOT; };
+		4867319516255B7D00DBAA56 /* click.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = click.caf; sourceTree = SOURCE_ROOT; };
 		487473BC1624F7C7007B9D2C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "iPad/en.lproj/MainWindow-iPad.xib"; sourceTree = "<group>"; };
 		4C219D5213AD0F6C004362DE /* vib_0.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = vib_0.aiff; sourceTree = "<group>"; };
 		4C227AC813A6E4AB0054213E /* AppleXylophoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleXylophoneViewController.h; sourceTree = "<group>"; };
@@ -106,6 +122,7 @@
 		4867316F162546F700DBAA56 /* UIImage+PDF */ = {
 			isa = PBXGroup;
 			children = (
+				4867318616254E7900DBAA56 /* ThatWasEZ.pdf */,
 				48673180162547DF00DBAA56 /* YingYang.pdf */,
 				48673170162546F700DBAA56 /* NSString+MD5.h */,
 				48673171162546F700DBAA56 /* NSString+MD5.m */,
@@ -151,6 +168,13 @@
 		4C227AD313A6E4F30054213E /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				4867319516255B7D00DBAA56 /* click.caf */,
+				4867318D1625504800DBAA56 /* click_2.m4a */,
+				4867318E1625504800DBAA56 /* click_3.m4a */,
+				4867318F1625504800DBAA56 /* click_4.m4a */,
+				486731901625504800DBAA56 /* click_5.m4a */,
+				4867318B1625500C00DBAA56 /* click_1.m4a */,
+				4867318916254FC800DBAA56 /* click_0.m4a */,
 				4C219D5213AD0F6C004362DE /* vib_0.aiff */,
 				4C227AE213A6E7B00054213E /* vib_1.aiff */,
 				4C227AE313A6E7B00054213E /* vib_2.aiff */,
@@ -291,6 +315,14 @@
 				487473BD1624F7C7007B9D2C /* MainWindow-iPad.xib in Resources */,
 				4867316C16253F9100DBAA56 /* EZButton.bundle in Resources */,
 				48673181162547DF00DBAA56 /* YingYang.pdf in Resources */,
+				4867318716254E7900DBAA56 /* ThatWasEZ.pdf in Resources */,
+				4867318A16254FC800DBAA56 /* click_0.m4a in Resources */,
+				4867318C1625500C00DBAA56 /* click_1.m4a in Resources */,
+				486731911625504800DBAA56 /* click_2.m4a in Resources */,
+				486731921625504800DBAA56 /* click_3.m4a in Resources */,
+				486731931625504800DBAA56 /* click_4.m4a in Resources */,
+				486731941625504800DBAA56 /* click_5.m4a in Resources */,
+				4867319616255B7D00DBAA56 /* click.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
