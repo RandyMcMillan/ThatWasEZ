@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		487473BD1624F7C7007B9D2C /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 487473BB1624F7C7007B9D2C /* MainWindow-iPad.xib */; };
 		4C219D5313AD0F6C004362DE /* vib_0.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 4C219D5213AD0F6C004362DE /* vib_0.aiff */; };
 		4C227ACB13A6E4AB0054213E /* AppleXylophoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C227AC913A6E4AB0054213E /* AppleXylophoneViewController.m */; };
 		4C227ACC13A6E4AB0054213E /* AppleXylophoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C227ACA13A6E4AB0054213E /* AppleXylophoneViewController.xib */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		487473BC1624F7C7007B9D2C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "iPad/en.lproj/MainWindow-iPad.xib"; sourceTree = "<group>"; };
 		4C219D5213AD0F6C004362DE /* vib_0.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = vib_0.aiff; sourceTree = "<group>"; };
 		4C227AC813A6E4AB0054213E /* AppleXylophoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleXylophoneViewController.h; sourceTree = "<group>"; };
 		4C227AC913A6E4AB0054213E /* AppleXylophoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleXylophoneViewController.m; sourceTree = "<group>"; };
@@ -82,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		487473BA1624F7C5007B9D2C /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				487473BB1624F7C7007B9D2C /* MainWindow-iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
 		4C227ACD13A6E4BC0054213E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +161,7 @@
 		4C79ACA7139133D80084E6A8 /* AudioMeetupDemo */ = {
 			isa = PBXGroup;
 			children = (
+				487473BA1624F7C5007B9D2C /* iPad */,
 				4C79ACB0139133D80084E6A8 /* AudioMeetupDemoAppDelegate.h */,
 				4C79ACB1139133D80084E6A8 /* AudioMeetupDemoAppDelegate.m */,
 				4C227AC813A6E4AB0054213E /* AppleXylophoneViewController.h */,
@@ -238,6 +249,7 @@
 				4CFB76F713AA9DFB0014CDA8 /* Icon.png in Resources */,
 				4CFB76F913AA9E030014CDA8 /* Icon@2x.png in Resources */,
 				4C219D5313AD0F6C004362DE /* vib_0.aiff in Resources */,
+				487473BD1624F7C7007B9D2C /* MainWindow-iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +270,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		487473BB1624F7C7007B9D2C /* MainWindow-iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				487473BC1624F7C7007B9D2C /* en */,
+			);
+			name = "MainWindow-iPad.xib";
+			sourceTree = "<group>";
+		};
 		4C79ACAA139133D80084E6A8 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -318,7 +338,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AudioMeetupDemo/AudioMeetupDemo-Prefix.pch";
 				INFOPLIST_FILE = "AudioMeetupDemo/AudioMeetupDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -331,7 +353,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AudioMeetupDemo/AudioMeetupDemo-Prefix.pch";
 				INFOPLIST_FILE = "AudioMeetupDemo/AudioMeetupDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

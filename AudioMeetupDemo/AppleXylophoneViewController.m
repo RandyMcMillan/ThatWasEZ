@@ -13,6 +13,7 @@
 
 @synthesize mixerHost;
 
+
 - (void)dealloc {
     [super dealloc];
     [mixerHost release];
@@ -24,15 +25,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+   
+    //[self drawRects];
+ 
     //define the "key" xylophone note rectangles
-    keyRects[0] = CGRectMake(55, 347, 199, 42);
-    keyRects[1] = CGRectMake(55, 304, 199, 42);
-    keyRects[2] = CGRectMake(55, 258, 199, 44);
-    keyRects[3] = CGRectMake(55, 213, 199, 44);
-    keyRects[4] = CGRectMake(55, 166, 199, 44);
-    keyRects[5] = CGRectMake(55, 43, 199, 121);
-        
+    /*
+    keyRects[0] = label0.frame;//CGRectMake(55, 347, 199, 42);
+    keyRects[1] = label1.frame;//CGRectMake(55, 304, 199, 42);
+    keyRects[2] = label2.frame;//CGRectMake(55, 258, 199, 44);
+    keyRects[3] = label3.frame;//CGRectMake(55, 213, 199, 44);
+    keyRects[4] = label4.frame;//CGRectMake(55, 166, 199, 44);
+    keyRects[5] = label5.frame;//CGRectMake(55, 43, 199, 121);
+      */
+    
     //create the mixer
     self.mixerHost = [[MixerHostAudio alloc] init];
     
@@ -40,8 +45,58 @@
     [mixerHost startAUGraph];
 }
 
+- (void)drawRects
+{
+
+    //define the "key" xylophone note rectangles
+    keyRects[0] = label0.frame;//CGRectMake(55, 347, 199, 42);
+    keyRects[1] = label1.frame;//CGRectMake(55, 304, 199, 42);
+    keyRects[2] = label2.frame;//CGRectMake(55, 258, 199, 44);
+    keyRects[3] = label3.frame;//CGRectMake(55, 213, 199, 44);
+    keyRects[4] = label4.frame;//CGRectMake(55, 166, 199, 44);
+    keyRects[5] = label5.frame;//CGRectMake(55, 43, 199, 121);
+
+
+}
+
+
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)
+toInterfaceOrientation
+{
+    // Return YES for supported orientations
+    if (toInterfaceOrientation == UIInterfaceOrientationLandscapeRight) {
+        return YES;
+    }
+    
+    if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft) {
+        return YES;
+    }
+    
+    if (toInterfaceOrientation == UIInterfaceOrientationPortrait) {
+        return YES;
+    }
+    
+    if (toInterfaceOrientation ==
+        UIInterfaceOrientationPortraitUpsideDown) {
+        return YES;
+    } else {return NO; }
+} /* shouldAutorotateToInterfaceOrientation */
+
+- (BOOL)didAutorotateToInterfaceOrientation:(UIInterfaceOrientation)
+currentInterfaceOrientation
+{
+    NSLog(@"did auto rotate");
+    return YES;
+}
+
+
+
+
 - (void)viewDidUnload {
-    [super viewDidUnload];
+    
+    self.view = nil;
+   //[super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
@@ -55,6 +110,11 @@
 #pragma mark Touch events
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    
+    [self drawRects];
+
+    
     UITouch *aTouch = [touches anyObject];
     int idx = [self keyIndexForTouch:aTouch];
     
