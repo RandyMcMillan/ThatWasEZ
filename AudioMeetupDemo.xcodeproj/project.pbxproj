@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		4867316C16253F9100DBAA56 /* EZButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4867316916253F9100DBAA56 /* EZButton.bundle */; };
 		4867316D16253F9100DBAA56 /* EZButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4867316B16253F9100DBAA56 /* EZButton.m */; };
+		48673178162546F700DBAA56 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 48673171162546F700DBAA56 /* NSString+MD5.m */; };
+		48673179162546F700DBAA56 /* PDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48673173162546F700DBAA56 /* PDFView.m */; };
+		4867317A162546F700DBAA56 /* UIImage+PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 48673175162546F700DBAA56 /* UIImage+PDF.m */; };
+		4867317B162546F700DBAA56 /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 48673177162546F700DBAA56 /* UIView+Image.m */; };
+		48673181162547DF00DBAA56 /* YingYang.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48673180162547DF00DBAA56 /* YingYang.pdf */; };
 		487473BD1624F7C7007B9D2C /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 487473BB1624F7C7007B9D2C /* MainWindow-iPad.xib */; };
 		4C219D5313AD0F6C004362DE /* vib_0.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 4C219D5213AD0F6C004362DE /* vib_0.aiff */; };
 		4C227ACB13A6E4AB0054213E /* AppleXylophoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C227AC913A6E4AB0054213E /* AppleXylophoneViewController.m */; };
@@ -39,6 +44,15 @@
 		4867316916253F9100DBAA56 /* EZButton.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = EZButton.bundle; path = EZButton/EZButton.bundle; sourceTree = "<group>"; };
 		4867316A16253F9100DBAA56 /* EZButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EZButton.h; path = EZButton/EZButton.h; sourceTree = "<group>"; };
 		4867316B16253F9100DBAA56 /* EZButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EZButton.m; path = EZButton/EZButton.m; sourceTree = "<group>"; };
+		48673170162546F700DBAA56 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		48673171162546F700DBAA56 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		48673172162546F700DBAA56 /* PDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFView.h; sourceTree = "<group>"; };
+		48673173162546F700DBAA56 /* PDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFView.m; sourceTree = "<group>"; };
+		48673174162546F700DBAA56 /* UIImage+PDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PDF.h"; sourceTree = "<group>"; };
+		48673175162546F700DBAA56 /* UIImage+PDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PDF.m"; sourceTree = "<group>"; };
+		48673176162546F700DBAA56 /* UIView+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Image.h"; sourceTree = "<group>"; };
+		48673177162546F700DBAA56 /* UIView+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Image.m"; sourceTree = "<group>"; };
+		48673180162547DF00DBAA56 /* YingYang.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = YingYang.pdf; sourceTree = "<group>"; };
 		487473BC1624F7C7007B9D2C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "iPad/en.lproj/MainWindow-iPad.xib"; sourceTree = "<group>"; };
 		4C219D5213AD0F6C004362DE /* vib_0.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = vib_0.aiff; sourceTree = "<group>"; };
 		4C227AC813A6E4AB0054213E /* AppleXylophoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleXylophoneViewController.h; sourceTree = "<group>"; };
@@ -89,6 +103,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4867316F162546F700DBAA56 /* UIImage+PDF */ = {
+			isa = PBXGroup;
+			children = (
+				48673180162547DF00DBAA56 /* YingYang.pdf */,
+				48673170162546F700DBAA56 /* NSString+MD5.h */,
+				48673171162546F700DBAA56 /* NSString+MD5.m */,
+				48673172162546F700DBAA56 /* PDFView.h */,
+				48673173162546F700DBAA56 /* PDFView.m */,
+				48673174162546F700DBAA56 /* UIImage+PDF.h */,
+				48673175162546F700DBAA56 /* UIImage+PDF.m */,
+				48673176162546F700DBAA56 /* UIView+Image.h */,
+				48673177162546F700DBAA56 /* UIView+Image.m */,
+			);
+			path = "UIImage+PDF";
+			sourceTree = "<group>";
+		};
 		487473BA1624F7C5007B9D2C /* iPad */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +164,7 @@
 		4C79AC92139133D80084E6A8 = {
 			isa = PBXGroup;
 			children = (
+				4867316F162546F700DBAA56 /* UIImage+PDF */,
 				4867316916253F9100DBAA56 /* EZButton.bundle */,
 				4867316A16253F9100DBAA56 /* EZButton.h */,
 				4867316B16253F9100DBAA56 /* EZButton.m */,
@@ -259,6 +290,7 @@
 				4C219D5313AD0F6C004362DE /* vib_0.aiff in Resources */,
 				487473BD1624F7C7007B9D2C /* MainWindow-iPad.xib in Resources */,
 				4867316C16253F9100DBAA56 /* EZButton.bundle in Resources */,
+				48673181162547DF00DBAA56 /* YingYang.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +306,10 @@
 				4C227ACB13A6E4AB0054213E /* AppleXylophoneViewController.m in Sources */,
 				4C227ADE13A6E6B20054213E /* MixerHostAudio.m in Sources */,
 				4867316D16253F9100DBAA56 /* EZButton.m in Sources */,
+				48673178162546F700DBAA56 /* NSString+MD5.m in Sources */,
+				48673179162546F700DBAA56 /* PDFView.m in Sources */,
+				4867317A162546F700DBAA56 /* UIImage+PDF.m in Sources */,
+				4867317B162546F700DBAA56 /* UIView+Image.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

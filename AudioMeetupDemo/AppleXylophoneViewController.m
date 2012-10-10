@@ -7,6 +7,7 @@
 //
 
 #import "AppleXylophoneViewController.h"
+#import "UIImage+PDF.h"
 
 
 @implementation AppleXylophoneViewController
@@ -26,6 +27,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
+    
+    
+    
+    UIImageView *buttonImageView = [[ UIImageView alloc ] initWithImage:[ UIImage originalSizeImageWithPDFNamed:@"YingYang.pdf"  ]];
+    //buttonImageView.center = self.view.center;
+    //[ self.view addSubview:imageView ];
+    //[ buttonImageView release ];
+
+    imageView.image = buttonImageView.image;
+    [ buttonImageView release ];
+ 
     //[self drawRects];
  
     //define the "key" xylophone note rectangles
