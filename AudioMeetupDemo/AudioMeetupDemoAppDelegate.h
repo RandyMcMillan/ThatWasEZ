@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ViewController~ipad.h"
-#import "ViewController~iphone.h"
+#import "AppleXylophoneViewController.h"
 
 @interface AudioMeetupDemoAppDelegate : NSObject <UIApplicationDelegate> {
 
@@ -16,6 +15,6 @@
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 
-@property (nonatomic, retain) IBOutlet ViewController_ipad *viewControllerIPad;
-@property (nonatomic, retain) IBOutlet ViewController_iphone *viewControllerIPhone;
+@property (nonatomic, retain) IBOutlet AppleXylophoneViewController *viewController;
+
 @end

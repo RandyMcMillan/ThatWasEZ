@@ -7,33 +7,18 @@
 //
 
 #import "AudioMeetupDemoAppDelegate.h"
-
-#import "ViewController~ipad.h"
-#import "ViewController~iphone.h"
+#import "AppleXylophoneViewController.h"
 
 @implementation AudioMeetupDemoAppDelegate
 
 
 @synthesize window=_window;
-@synthesize viewControllerIPad,viewControllerIPhone;
+@synthesize viewController;
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-   
     
-    if (IS_IPAD) {
-
-        
-        self.window.rootViewController = viewControllerIPad;
-
-    
-    } else {
-
-        
-        self.window.rootViewController = viewControllerIPhone;
-    
-    }
-    
+    self.window.rootViewController = viewController;
     [self.window makeKeyAndVisible];
             
     return YES;
@@ -80,8 +65,7 @@
 
 - (void)dealloc
 {
-    [viewControllerIPad release];
-    [viewControllerIPhone release];
+    [viewController release];
     [_window release];    
     [super dealloc];
 }

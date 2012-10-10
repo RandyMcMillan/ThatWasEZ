@@ -190,22 +190,8 @@ static OSStatus inputRenderCallback (
         NSURL *url = [[NSBundle mainBundle] URLForResource:[NSString stringWithFormat:@"vib_%i",i] withExtension:@"aiff"];
         
         // ExtAudioFileRef objects expect CFURLRef URLs, so cast to CRURLRef here
-        
-        
-#if __has_feature(objc_arc)
-        
-        sourceURLArray[i] = (__bridge CFURLRef) url;
-
-        
-
-#else
         sourceURLArray[i] = (CFURLRef) [url retain];
-
-    
-#endif
-        
     }
-    
 }
 
 - (void) setupMonoStreamFormat {
@@ -733,17 +719,12 @@ static OSStatus inputRenderCallback (
     UInt32 swappedResult = CFSwapInt32HostToBig (result);
     bcopy (&swappedResult, resultString, 4);
     resultString[4] = '\0';
-   
     
-    /*
     NSLog (
            @"*** %@ error: %%d%08X %4.4s\n",
            errorString,
            (char*) &resultString
            );
-
-     */
-
 }
 
 
@@ -761,13 +742,8 @@ static OSStatus inputRenderCallback (
             fileStructArray[audioFile].audioData = 0;
         }
     }
-   
     
-#if __has_feature(objc_arc)
-#else
     [super dealloc];
-#endif
-    
 }
 
 @end
