@@ -62,7 +62,7 @@
 
     //define the "key" xylophone note rectangles
     keyRects[0] = imageView.frame;//label0.frame;//CGRectMake(55, 347, 199, 42);
-                                  //keyRects[1] = label1.frame;//CGRectMake(55, 304, 199, 42);
+                                  keyRects[1] = label1.frame;//CGRectMake(55, 304, 199, 42);
                                   //keyRects[2] = label2.frame;//CGRectMake(55, 258, 199, 44);
                                   //keyRects[3] = label3.frame;//CGRectMake(55, 213, 199, 44);
                                   //keyRects[4] = label4.frame;//CGRectMake(55, 166, 199, 44);
