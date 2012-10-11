@@ -99,7 +99,7 @@
 		4C227AE413A6E7B00054213E /* vib_3.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = vib_3.aiff; sourceTree = "<group>"; };
 		4C227AE513A6E7B00054213E /* vib_4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = vib_4.aiff; sourceTree = "<group>"; };
 		4C227AE613A6E7B00054213E /* vib_5.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = vib_5.aiff; sourceTree = "<group>"; };
-		4C79AC9D139133D80084E6A8 /* thatwaseasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thatwaseasy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C79AC9D139133D80084E6A8 /* thatwasez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thatwasez.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C79ACA1139133D80084E6A8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4C79ACA3139133D80084E6A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4C79ACA5139133D80084E6A8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -223,7 +223,7 @@
 		4C79AC9E139133D80084E6A8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4C79AC9D139133D80084E6A8 /* thatwaseasy.app */,
+				4C79AC9D139133D80084E6A8 /* thatwasez.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -273,9 +273,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4C79AC9C139133D80084E6A8 /* thatwaseasy */ = {
+		4C79AC9C139133D80084E6A8 /* thatwasez */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4C79ACBE139133D90084E6A8 /* Build configuration list for PBXNativeTarget "thatwaseasy" */;
+			buildConfigurationList = 4C79ACBE139133D90084E6A8 /* Build configuration list for PBXNativeTarget "thatwasez" */;
 			buildPhases = (
 				4C79AC99139133D80084E6A8 /* Sources */,
 				4C79AC9A139133D80084E6A8 /* Frameworks */,
@@ -285,9 +285,9 @@
 			);
 			dependencies = (
 			);
-			name = thatwaseasy;
+			name = thatwasez;
 			productName = AudioMeetupDemo;
-			productReference = 4C79AC9D139133D80084E6A8 /* thatwaseasy.app */;
+			productReference = 4C79AC9D139133D80084E6A8 /* thatwasez.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -310,7 +310,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4C79AC9C139133D80084E6A8 /* thatwaseasy */,
+				4C79AC9C139133D80084E6A8 /* thatwasez */,
 			);
 		};
 /* End PBXProject section */
@@ -444,7 +444,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AudioMeetupDemo/AudioMeetupDemo-Prefix.pch";
 				INFOPLIST_FILE = "AudioMeetupDemo/AudioMeetupDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -459,7 +459,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AudioMeetupDemo/AudioMeetupDemo-Prefix.pch";
 				INFOPLIST_FILE = "AudioMeetupDemo/AudioMeetupDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -479,7 +479,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4C79ACBE139133D90084E6A8 /* Build configuration list for PBXNativeTarget "thatwaseasy" */ = {
+		4C79ACBE139133D90084E6A8 /* Build configuration list for PBXNativeTarget "thatwasez" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4C79ACBF139133D90084E6A8 /* Debug */,

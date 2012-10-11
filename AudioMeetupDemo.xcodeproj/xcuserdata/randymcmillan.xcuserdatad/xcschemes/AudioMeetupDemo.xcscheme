@@ -14,8 +14,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4C79AC9C139133D80084E6A8"
-               BuildableName = "thatwaseasy.app"
-               BlueprintName = "thatwaseasy"
+               BuildableName = "thatwasez.app"
+               BlueprintName = "thatwasez"
                ReferencedContainer = "container:AudioMeetupDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,8 +32,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4C79AC9C139133D80084E6A8"
-            BuildableName = "thatwaseasy.app"
-            BlueprintName = "thatwaseasy"
+            BuildableName = "thatwasez.app"
+            BlueprintName = "thatwasez"
             ReferencedContainer = "container:AudioMeetupDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -51,8 +51,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4C79AC9C139133D80084E6A8"
-            BuildableName = "thatwaseasy.app"
-            BlueprintName = "thatwaseasy"
+            BuildableName = "thatwasez.app"
+            BlueprintName = "thatwasez"
             ReferencedContainer = "container:AudioMeetupDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -69,8 +69,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4C79AC9C139133D80084E6A8"
-            BuildableName = "thatwaseasy.app"
-            BlueprintName = "thatwaseasy"
+            BuildableName = "thatwasez.app"
+            BlueprintName = "thatwasez"
             ReferencedContainer = "container:AudioMeetupDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
