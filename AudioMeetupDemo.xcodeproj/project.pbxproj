@@ -23,6 +23,15 @@
 		486731941625504800DBAA56 /* click_5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 486731901625504800DBAA56 /* click_5.m4a */; };
 		4867319616255B7D00DBAA56 /* click.caf in Resources */ = {isa = PBXBuildFile; fileRef = 4867319516255B7D00DBAA56 /* click.caf */; };
 		487473BD1624F7C7007B9D2C /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 487473BB1624F7C7007B9D2C /* MainWindow-iPad.xib */; };
+		48A921F116265B5800CEC0A4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48A921F016265B5800CEC0A4 /* Default-568h@2x.png */; };
+		48A921F316265D1600CEC0A4 /* ThatWasEZ-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 48A921F216265D1500CEC0A4 /* ThatWasEZ-72.png */; };
+		48A921F516265D4A00CEC0A4 /* ThatWasEZ-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48A921F416265D4A00CEC0A4 /* ThatWasEZ-72@2x.png */; };
+		48FBA447162690350035CDD3 /* ThatWasEZ57.png in Resources */ = {isa = PBXBuildFile; fileRef = 48FBA446162690350035CDD3 /* ThatWasEZ57.png */; };
+		48FBA449162690600035CDD3 /* ThatWasEZ@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48FBA448162690600035CDD3 /* ThatWasEZ@2x.png */; };
+		48FBA44D162690EC0035CDD3 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 48FBA44A1626908B0035CDD3 /* Default-Landscape~ipad.png */; };
+		48FBA44F1626914E0035CDD3 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 48FBA44E1626914E0035CDD3 /* Default-Landscape@2x~ipad.png */; };
+		48FBA450162691D30035CDD3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFB76F213AA9B500014CDA8 /* Default.png */; };
+		48FBA451162691EC0035CDD3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFB76F413AA9B5E0014CDA8 /* Default@2x.png */; };
 		4C219D5313AD0F6C004362DE /* vib_0.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 4C219D5213AD0F6C004362DE /* vib_0.aiff */; };
 		4C227ACB13A6E4AB0054213E /* AppleXylophoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C227AC913A6E4AB0054213E /* AppleXylophoneViewController.m */; };
 		4C227ACC13A6E4AB0054213E /* AppleXylophoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C227ACA13A6E4AB0054213E /* AppleXylophoneViewController.xib */; };
@@ -42,8 +51,6 @@
 		4C79ACAF139133D80084E6A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C79ACAE139133D80084E6A8 /* main.m */; };
 		4C79ACB2139133D80084E6A8 /* AudioMeetupDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C79ACB1139133D80084E6A8 /* AudioMeetupDemoAppDelegate.m */; };
 		4C79ACB5139133D90084E6A8 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C79ACB3139133D90084E6A8 /* MainWindow.xib */; };
-		4CFB76F313AA9B500014CDA8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFB76F213AA9B500014CDA8 /* Default.png */; };
-		4CFB76F513AA9B5E0014CDA8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFB76F413AA9B5E0014CDA8 /* Default@2x.png */; };
 		4CFB76F713AA9DFB0014CDA8 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFB76F613AA9DFB0014CDA8 /* Icon.png */; };
 		4CFB76F913AA9E030014CDA8 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFB76F813AA9E030014CDA8 /* Icon@2x.png */; };
 /* End PBXBuildFile section */
@@ -70,6 +77,13 @@
 		486731901625504800DBAA56 /* click_5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = click_5.m4a; sourceTree = SOURCE_ROOT; };
 		4867319516255B7D00DBAA56 /* click.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = click.caf; sourceTree = SOURCE_ROOT; };
 		487473BC1624F7C7007B9D2C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "iPad/en.lproj/MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		48A921F016265B5800CEC0A4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		48A921F216265D1500CEC0A4 /* ThatWasEZ-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ThatWasEZ-72.png"; sourceTree = "<group>"; };
+		48A921F416265D4A00CEC0A4 /* ThatWasEZ-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ThatWasEZ-72@2x.png"; sourceTree = "<group>"; };
+		48FBA446162690350035CDD3 /* ThatWasEZ57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ThatWasEZ57.png; sourceTree = "<group>"; };
+		48FBA448162690600035CDD3 /* ThatWasEZ@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ThatWasEZ@2x.png"; sourceTree = "<group>"; };
+		48FBA44A1626908B0035CDD3 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		48FBA44E1626914E0035CDD3 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
 		4C219D5213AD0F6C004362DE /* vib_0.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = vib_0.aiff; sourceTree = "<group>"; };
 		4C227AC813A6E4AB0054213E /* AppleXylophoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleXylophoneViewController.h; sourceTree = "<group>"; };
 		4C227AC913A6E4AB0054213E /* AppleXylophoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleXylophoneViewController.m; sourceTree = "<group>"; };
@@ -85,7 +99,7 @@
 		4C227AE413A6E7B00054213E /* vib_3.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = vib_3.aiff; sourceTree = "<group>"; };
 		4C227AE513A6E7B00054213E /* vib_4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = vib_4.aiff; sourceTree = "<group>"; };
 		4C227AE613A6E7B00054213E /* vib_5.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = vib_5.aiff; sourceTree = "<group>"; };
-		4C79AC9D139133D80084E6A8 /* AudioMeetupDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioMeetupDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C79AC9D139133D80084E6A8 /* thatwaseasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thatwaseasy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C79ACA1139133D80084E6A8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4C79ACA3139133D80084E6A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4C79ACA5139133D80084E6A8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -188,6 +202,13 @@
 		4C79AC92139133D80084E6A8 = {
 			isa = PBXGroup;
 			children = (
+				48FBA44E1626914E0035CDD3 /* Default-Landscape@2x~ipad.png */,
+				48FBA44A1626908B0035CDD3 /* Default-Landscape~ipad.png */,
+				48FBA448162690600035CDD3 /* ThatWasEZ@2x.png */,
+				48FBA446162690350035CDD3 /* ThatWasEZ57.png */,
+				48A921F416265D4A00CEC0A4 /* ThatWasEZ-72@2x.png */,
+				48A921F216265D1500CEC0A4 /* ThatWasEZ-72.png */,
+				48A921F016265B5800CEC0A4 /* Default-568h@2x.png */,
 				4867316F162546F700DBAA56 /* UIImage+PDF */,
 				4867316916253F9100DBAA56 /* EZButton.bundle */,
 				4867316A16253F9100DBAA56 /* EZButton.h */,
@@ -202,7 +223,7 @@
 		4C79AC9E139133D80084E6A8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4C79AC9D139133D80084E6A8 /* AudioMeetupDemo.app */,
+				4C79AC9D139133D80084E6A8 /* thatwaseasy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -252,9 +273,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4C79AC9C139133D80084E6A8 /* AudioMeetupDemo */ = {
+		4C79AC9C139133D80084E6A8 /* thatwaseasy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4C79ACBE139133D90084E6A8 /* Build configuration list for PBXNativeTarget "AudioMeetupDemo" */;
+			buildConfigurationList = 4C79ACBE139133D90084E6A8 /* Build configuration list for PBXNativeTarget "thatwaseasy" */;
 			buildPhases = (
 				4C79AC99139133D80084E6A8 /* Sources */,
 				4C79AC9A139133D80084E6A8 /* Frameworks */,
@@ -264,9 +285,9 @@
 			);
 			dependencies = (
 			);
-			name = AudioMeetupDemo;
+			name = thatwaseasy;
 			productName = AudioMeetupDemo;
-			productReference = 4C79AC9D139133D80084E6A8 /* AudioMeetupDemo.app */;
+			productReference = 4C79AC9D139133D80084E6A8 /* thatwaseasy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -289,7 +310,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4C79AC9C139133D80084E6A8 /* AudioMeetupDemo */,
+				4C79AC9C139133D80084E6A8 /* thatwaseasy */,
 			);
 		};
 /* End PBXProject section */
@@ -307,8 +328,6 @@
 				4C227AEB13A6E7B00054213E /* vib_3.aiff in Resources */,
 				4C227AEC13A6E7B00054213E /* vib_4.aiff in Resources */,
 				4C227AED13A6E7B00054213E /* vib_5.aiff in Resources */,
-				4CFB76F313AA9B500014CDA8 /* Default.png in Resources */,
-				4CFB76F513AA9B5E0014CDA8 /* Default@2x.png in Resources */,
 				4CFB76F713AA9DFB0014CDA8 /* Icon.png in Resources */,
 				4CFB76F913AA9E030014CDA8 /* Icon@2x.png in Resources */,
 				4C219D5313AD0F6C004362DE /* vib_0.aiff in Resources */,
@@ -323,6 +342,15 @@
 				486731931625504800DBAA56 /* click_4.m4a in Resources */,
 				486731941625504800DBAA56 /* click_5.m4a in Resources */,
 				4867319616255B7D00DBAA56 /* click.caf in Resources */,
+				48A921F116265B5800CEC0A4 /* Default-568h@2x.png in Resources */,
+				48A921F316265D1600CEC0A4 /* ThatWasEZ-72.png in Resources */,
+				48A921F516265D4A00CEC0A4 /* ThatWasEZ-72@2x.png in Resources */,
+				48FBA447162690350035CDD3 /* ThatWasEZ57.png in Resources */,
+				48FBA449162690600035CDD3 /* ThatWasEZ@2x.png in Resources */,
+				48FBA44D162690EC0035CDD3 /* Default-Landscape~ipad.png in Resources */,
+				48FBA44F1626914E0035CDD3 /* Default-Landscape@2x~ipad.png in Resources */,
+				48FBA450162691D30035CDD3 /* Default.png in Resources */,
+				48FBA451162691EC0035CDD3 /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,7 +479,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4C79ACBE139133D90084E6A8 /* Build configuration list for PBXNativeTarget "AudioMeetupDemo" */ = {
+		4C79ACBE139133D90084E6A8 /* Build configuration list for PBXNativeTarget "thatwaseasy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4C79ACBF139133D90084E6A8 /* Debug */,
