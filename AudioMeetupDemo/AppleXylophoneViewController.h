@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MixerHostAudio.h"
 @class TweetButton;
+@class ShowClockBtn;
 #define KEY_COUNT 6
 
 @interface AppleXylophoneViewController : UIViewController {
@@ -24,6 +25,7 @@
     
     IBOutlet UIImageView *imageView;
     IBOutlet TweetButton *tweetBtn;
+    IBOutlet ShowClockBtn *showClockBtn;
     
 }
 
@@ -32,10 +34,12 @@
 @property (nonatomic,retain) NSString *imageString;
 @property (nonatomic,retain) NSString *urlString;
 @property (nonatomic,retain) TweetButton *tweetBtn;
+@property (nonatomic,retain) ShowClockBtn *showClockBtn;
 
 - (int)keyIndexForTouch:(UITouch *)touch;
 - (IBAction) mixerOutputGainChanged: (UISlider *) sender;
 - (void)drawRects;
 - (IBAction)tweetTapped:(id)sender;
+- (IBAction)showClock:(id)sender;
 
 @end

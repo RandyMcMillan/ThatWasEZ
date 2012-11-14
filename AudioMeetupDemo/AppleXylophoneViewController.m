@@ -10,6 +10,8 @@
 #import "UIImage+PDF.h"
 #import <Twitter/Twitter.h>
 #import "TweetButton.h"
+#import "ShowClockBtn.h"
+#import "NSTimerDemoViewController.h"
 
 @interface AppleXylophoneViewController ()
 //@property (strong, nonatomic) NSString *imageString;
@@ -22,6 +24,7 @@
 @synthesize urlString;
 @synthesize imageString;
 @synthesize tweetBtn;
+@synthesize showClockBtn;
 
 - (void)dealloc {
     [super dealloc];
@@ -40,8 +43,7 @@
     
     
     [tweetBtn useInitStyle];
-    // [tweetBtn useInitStyleImage];
-    
+    [showClockBtn useInitStyle];
     
     UIImageView *buttonImageView = [[ UIImageView alloc ] initWithImage:[ UIImage originalSizeImageWithPDFNamed:@"ThatWasEZ.pdf"  ]];
     //buttonImageView.center = self.view.center;
@@ -114,6 +116,17 @@
     }
 }
 
+- (IBAction)showClock:(id)sender {
+
+
+    NSTimerDemoViewController *clockVC = [NSTimerDemoViewController alloc];
+    clockVC.modalTransitionStyle = (UIModalTransitionStyleCrossDissolve);
+    clockVC.modalPresentationStyle = (UIModalPresentationFullScreen);
+    [self presentViewController:clockVC animated:YES completion:nil];
+
+
+
+}
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)
 toInterfaceOrientation

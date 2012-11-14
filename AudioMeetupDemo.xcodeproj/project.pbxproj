@@ -11,6 +11,13 @@
 		4815AD7B1653250500CB54B5 /* TweetButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4815AD781653250500CB54B5 /* TweetButton.bundle */; };
 		4815AD7C1653250500CB54B5 /* TweetButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4815AD7A1653250500CB54B5 /* TweetButton.m */; };
 		4815AD7E16532B6500CB54B5 /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4815AD7D16532B6500CB54B5 /* image1.png */; };
+		4815AD90165331AD00CB54B5 /* NSTimerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4815AD8F165331AD00CB54B5 /* NSTimerDemoViewController.m */; };
+		4815AD92165331F700CB54B5 /* NSTimerDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4815AD91165331F700CB54B5 /* NSTimerDemoViewController.xib */; };
+		4815AD9B165332C200CB54B5 /* ShowClockBtn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4815AD98165332C200CB54B5 /* ShowClockBtn.bundle */; };
+		4815AD9C165332C200CB54B5 /* ShowClockBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 4815AD9A165332C200CB54B5 /* ShowClockBtn.m */; };
+		4815AD9E1653361300CB54B5 /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 4815AD9D1653361200CB54B5 /* clock.png */; };
+		4815ADA216533B6300CB54B5 /* CloseButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4815AD9F16533B6300CB54B5 /* CloseButton.bundle */; };
+		4815ADA316533B6300CB54B5 /* CloseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4815ADA116533B6300CB54B5 /* CloseButton.m */; };
 		4867316C16253F9100DBAA56 /* EZButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4867316916253F9100DBAA56 /* EZButton.bundle */; };
 		4867316D16253F9100DBAA56 /* EZButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4867316B16253F9100DBAA56 /* EZButton.m */; };
 		48673178162546F700DBAA56 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 48673171162546F700DBAA56 /* NSString+MD5.m */; };
@@ -65,6 +72,17 @@
 		4815AD791653250500CB54B5 /* TweetButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TweetButton.h; path = TweetButton/TweetButton.h; sourceTree = "<group>"; };
 		4815AD7A1653250500CB54B5 /* TweetButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TweetButton.m; path = TweetButton/TweetButton.m; sourceTree = "<group>"; };
 		4815AD7D16532B6500CB54B5 /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = image1.png; path = TweetButton/image1.png; sourceTree = "<group>"; };
+		4815AD8E165331AD00CB54B5 /* NSTimerDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSTimerDemoViewController.h; sourceTree = "<group>"; };
+		4815AD8F165331AD00CB54B5 /* NSTimerDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTimerDemoViewController.m; sourceTree = "<group>"; };
+		4815AD91165331F700CB54B5 /* NSTimerDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSTimerDemoViewController.xib; sourceTree = "<group>"; };
+		4815AD98165332C200CB54B5 /* ShowClockBtn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ShowClockBtn.bundle; path = AudioMeetupDemo/ShowClock/ShowClockBtn.bundle; sourceTree = "<group>"; };
+		4815AD99165332C200CB54B5 /* ShowClockBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShowClockBtn.h; path = AudioMeetupDemo/ShowClock/ShowClockBtn.h; sourceTree = "<group>"; };
+		4815AD9A165332C200CB54B5 /* ShowClockBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShowClockBtn.m; path = AudioMeetupDemo/ShowClock/ShowClockBtn.m; sourceTree = "<group>"; };
+		4815AD9D1653361200CB54B5 /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = clock.png; path = AudioMeetupDemo/ShowClock/clock.png; sourceTree = "<group>"; };
+		4815AD9F16533B6300CB54B5 /* CloseButton.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = CloseButton.bundle; path = CloseButton/CloseButton.bundle; sourceTree = "<group>"; };
+		4815ADA016533B6300CB54B5 /* CloseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloseButton.h; path = CloseButton/CloseButton.h; sourceTree = "<group>"; };
+		4815ADA116533B6300CB54B5 /* CloseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloseButton.m; path = CloseButton/CloseButton.m; sourceTree = "<group>"; };
+		4815ADA41653440C00CB54B5 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		4867316916253F9100DBAA56 /* EZButton.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = EZButton.bundle; path = EZButton/EZButton.bundle; sourceTree = "<group>"; };
 		4867316A16253F9100DBAA56 /* EZButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EZButton.h; path = EZButton/EZButton.h; sourceTree = "<group>"; };
 		4867316B16253F9100DBAA56 /* EZButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EZButton.m; path = EZButton/EZButton.m; sourceTree = "<group>"; };
@@ -212,6 +230,10 @@
 		4C79AC92139133D80084E6A8 = {
 			isa = PBXGroup;
 			children = (
+				4815AD98165332C200CB54B5 /* ShowClockBtn.bundle */,
+				4815AD99165332C200CB54B5 /* ShowClockBtn.h */,
+				4815AD9A165332C200CB54B5 /* ShowClockBtn.m */,
+				4815AD9D1653361200CB54B5 /* clock.png */,
 				4815AD751653229C00CB54B5 /* Twitter.framework */,
 				48FBA44E1626914E0035CDD3 /* Default-Landscape@2x~ipad.png */,
 				48FBA44A1626908B0035CDD3 /* Default-Landscape~ipad.png */,
@@ -277,6 +299,13 @@
 		4C79ACA8139133D80084E6A8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4815ADA41653440C00CB54B5 /* Constants.h */,
+				4815AD8E165331AD00CB54B5 /* NSTimerDemoViewController.h */,
+				4815AD8F165331AD00CB54B5 /* NSTimerDemoViewController.m */,
+				4815AD91165331F700CB54B5 /* NSTimerDemoViewController.xib */,
+				4815AD9F16533B6300CB54B5 /* CloseButton.bundle */,
+				4815ADA016533B6300CB54B5 /* CloseButton.h */,
+				4815ADA116533B6300CB54B5 /* CloseButton.m */,
 				4C79ACA9139133D80084E6A8 /* AudioMeetupDemo-Info.plist */,
 				4C79ACAA139133D80084E6A8 /* InfoPlist.strings */,
 				4C79ACAD139133D80084E6A8 /* AudioMeetupDemo-Prefix.pch */,
@@ -368,6 +397,10 @@
 				48FBA451162691EC0035CDD3 /* Default@2x.png in Resources */,
 				4815AD7B1653250500CB54B5 /* TweetButton.bundle in Resources */,
 				4815AD7E16532B6500CB54B5 /* image1.png in Resources */,
+				4815AD92165331F700CB54B5 /* NSTimerDemoViewController.xib in Resources */,
+				4815AD9B165332C200CB54B5 /* ShowClockBtn.bundle in Resources */,
+				4815AD9E1653361300CB54B5 /* clock.png in Resources */,
+				4815ADA216533B6300CB54B5 /* CloseButton.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +421,9 @@
 				4867317A162546F700DBAA56 /* UIImage+PDF.m in Sources */,
 				4867317B162546F700DBAA56 /* UIView+Image.m in Sources */,
 				4815AD7C1653250500CB54B5 /* TweetButton.m in Sources */,
+				4815AD90165331AD00CB54B5 /* NSTimerDemoViewController.m in Sources */,
+				4815AD9C165332C200CB54B5 /* ShowClockBtn.m in Sources */,
+				4815ADA316533B6300CB54B5 /* CloseButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
