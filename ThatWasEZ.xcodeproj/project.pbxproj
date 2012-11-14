@@ -130,9 +130,9 @@
 		4C79ACA1139133D80084E6A8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4C79ACA3139133D80084E6A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4C79ACA5139133D80084E6A8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		4C79ACA9139133D80084E6A8 /* AudioMeetupDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AudioMeetupDemo-Info.plist"; sourceTree = "<group>"; };
+		4C79ACA9139133D80084E6A8 /* ThatWasEZ-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ThatWasEZ-Info.plist"; sourceTree = "<group>"; };
 		4C79ACAB139133D80084E6A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4C79ACAD139133D80084E6A8 /* AudioMeetupDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AudioMeetupDemo-Prefix.pch"; sourceTree = "<group>"; };
+		4C79ACAD139133D80084E6A8 /* ThatWasEZ-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ThatWasEZ-Prefix.pch"; sourceTree = "<group>"; };
 		4C79ACAE139133D80084E6A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4C79ACB0139133D80084E6A8 /* AudioMeetupDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioMeetupDemoAppDelegate.h; sourceTree = "<group>"; };
 		4C79ACB1139133D80084E6A8 /* AudioMeetupDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioMeetupDemoAppDelegate.m; sourceTree = "<group>"; };
@@ -306,9 +306,9 @@
 				4815AD9F16533B6300CB54B5 /* CloseButton.bundle */,
 				4815ADA016533B6300CB54B5 /* CloseButton.h */,
 				4815ADA116533B6300CB54B5 /* CloseButton.m */,
-				4C79ACA9139133D80084E6A8 /* AudioMeetupDemo-Info.plist */,
+				4C79ACA9139133D80084E6A8 /* ThatWasEZ-Info.plist */,
 				4C79ACAA139133D80084E6A8 /* InfoPlist.strings */,
-				4C79ACAD139133D80084E6A8 /* AudioMeetupDemo-Prefix.pch */,
+				4C79ACAD139133D80084E6A8 /* ThatWasEZ-Prefix.pch */,
 				4C79ACAE139133D80084E6A8 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -342,7 +342,7 @@
 			attributes = {
 				ORGANIZATIONNAME = "DOCKMARKET LLC";
 			};
-			buildConfigurationList = 4C79AC97139133D80084E6A8 /* Build configuration list for PBXProject "AudioMeetupDemo" */;
+			buildConfigurationList = 4C79AC97139133D80084E6A8 /* Build configuration list for PBXProject "ThatWasEZ" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -478,13 +478,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Randy McMillan (PHTM25SWUN)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6B2E0983-CDE5-46ED-A2EE-06C0A004075C";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -496,8 +497,8 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AudioMeetupDemo/AudioMeetupDemo-Prefix.pch";
-				INFOPLIST_FILE = "AudioMeetupDemo/AudioMeetupDemo-Info.plist";
+				GCC_PREFIX_HEADER = "AudioMeetupDemo/ThatWasEZ-Prefix.pch";
+				INFOPLIST_FILE = "AudioMeetupDemo/ThatWasEZ-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -511,8 +512,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AudioMeetupDemo/AudioMeetupDemo-Prefix.pch";
-				INFOPLIST_FILE = "AudioMeetupDemo/AudioMeetupDemo-Info.plist";
+				GCC_PREFIX_HEADER = "AudioMeetupDemo/ThatWasEZ-Prefix.pch";
+				INFOPLIST_FILE = "AudioMeetupDemo/ThatWasEZ-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -524,7 +525,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4C79AC97139133D80084E6A8 /* Build configuration list for PBXProject "AudioMeetupDemo" */ = {
+		4C79AC97139133D80084E6A8 /* Build configuration list for PBXProject "ThatWasEZ" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4C79ACBC139133D90084E6A8 /* Debug */,
