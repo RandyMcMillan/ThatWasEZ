@@ -7,24 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
-@class CloseButton;
-@class TweetButton;
+@class	CloseButton;
+@class	TweetButton;
 @interface NSTimerDemoViewController : UIViewController {
-    UILabel *timerLabel;
-    NSTimer *pollingTimer;
-    NSDateFormatter *dateFormatter;
-    CloseButton *closeBtn;
-    
-    IBOutlet TweetButton *tweetBtn;
+	UILabel			*timerLabel;
+	NSTimer			*pollingTimer;
+	NSDateFormatter *dateFormatter;
+	CloseButton		*closeBtn;
 
+	IBOutlet TweetButton *tweetBtn;
 }
 
-@property (nonatomic, retain) IBOutlet UILabel *timerLabel;
-@property (nonatomic, retain) NSDateFormatter *dateFormatter;
-@property (nonatomic,retain)IBOutlet CloseButton *closeBtn;
-@property (nonatomic,retain) TweetButton *tweetBtn;
-@property (nonatomic,retain) NSString *imageString;
-@property (nonatomic,retain) NSString *urlString;
+@property (nonatomic, retain) IBOutlet UILabel		*timerLabel;
+@property (nonatomic, retain) NSDateFormatter		*dateFormatter;
+@property (nonatomic, retain) IBOutlet CloseButton	*closeBtn;
+@property (nonatomic, retain) TweetButton			*tweetBtn;
+@property (nonatomic, retain) NSString				*imageString;
+@property (nonatomic, retain) NSString				*urlString;
 
 - (IBAction)hideClock:(id)sender;
 - (IBAction)tweetTapped:(id)sender;

@@ -4,8 +4,8 @@
 //
 //
 
-#define VIEWBOUNDS  [[UIScreen mainScreen] bounds]
-#define IS_IPAD     (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define VIEWBOUNDS	[[UIScreen mainScreen] bounds]
+#define IS_IPAD		(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 
 /*
  *
@@ -31,12 +31,12 @@
  */
 
 #define INFODICTVERSION [[[NSBundle mainBundle] infoDictionary] objectForKey : (NSString *)kCFBundleInfoDictionaryVersionKey]
-#define BUNDLEVERSION   [[[NSBundle mainBundle] infoDictionary] objectForKey : (NSString *)kCFBundleVersionKey]
-#define DEVREGION       [[[NSBundle mainBundle] infoDictionary] objectForKey : (NSString *)kCFBundleDevelopmentRegionKey]
-#define NAMEKEY         [[[NSBundle mainBundle] infoDictionary] objectForKey : (NSString *)kCFBundleNameKey]
-#define LOCALIZATION    [[[NSBundle mainBundle] infoDictionary] objectForKey : (NSString *)kCFBundleLocalizationsKey]
+#define BUNDLEVERSION	[[[NSBundle mainBundle] infoDictionary] objectForKey : (NSString *)kCFBundleVersionKey]
+#define DEVREGION		[[[NSBundle mainBundle] infoDictionary] objectForKey : (NSString *)kCFBundleDevelopmentRegionKey]
+#define NAMEKEY			[[[NSBundle mainBundle] infoDictionary] objectForKey : (NSString *)kCFBundleNameKey]
+#define LOCALIZATION	[[[NSBundle mainBundle] infoDictionary] objectForKey : (NSString *)kCFBundleLocalizationsKey]
 
-#define APPINFO         [[NSBundle mainBundle] infoDictionary]
+#define APPINFO			[[NSBundle mainBundle] infoDictionary]
 
 /*  Add Write GitVersion to your Build Phases
  *
@@ -57,9 +57,6 @@
  *
  */
 
-
-
-#define MINIMUM_SCALE 1.0f
-#define MAXIMUM_SCALE 4.0f
-#define ZOOM_STEP 1.5
-
+#define MINIMUM_SCALE	1.0f
+#define MAXIMUM_SCALE	4.0f
+#define ZOOM_STEP		1.5

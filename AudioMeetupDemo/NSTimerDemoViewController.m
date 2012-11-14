@@ -15,7 +15,7 @@
 #define kPollingInterval 0.1
 
 @interface NSTimerDemoViewController (Private)
-- (void) pollTime;
+- (void)pollTime;
 @end
 
 @implementation NSTimerDemoViewController
@@ -28,112 +28,99 @@
 
 #pragma mark - Private Methods
 
-- (void) pollTime
+- (void)pollTime
 {
-    NSDate *today = [[NSDate alloc] init];    
-    NSString *currentTime = [self.dateFormatter stringFromDate: today];
-    self.timerLabel.text = currentTime;
-    [today release];
+	NSDate		*today			= [[NSDate alloc] init];
+	NSString	*currentTime	= [self.dateFormatter stringFromDate:today];
+
+	self.timerLabel.text = currentTime;
+	[today release];
 }
 
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
-   
-    
-    if (IS_IPAD) {
-       
-        self.timerLabel.font = [UIFont systemFontOfSize:150];
+	if (IS_IPAD) {
+		self.timerLabel.font = [UIFont systemFontOfSize:150];
+	}
 
-    }
+	[tweetBtn useInitStyle];
 
-    [tweetBtn useInitStyle];
+	[super viewDidLoad];
+	NSDate *today = [[NSDate alloc] init];
+	dateFormatter = [[NSDateFormatter alloc] init];
+	[self.dateFormatter setDateFormat:@"HH : mm : ss.S"];
 
-    [super viewDidLoad];
-    NSDate *today = [[NSDate alloc] init];
-    dateFormatter = [[NSDateFormatter alloc] init];
-    [self.dateFormatter setDateFormat:@"HH : mm : ss.S"];
-    
-    NSString *currentTime = [self.dateFormatter stringFromDate: today];
-    self.timerLabel.text = currentTime;
-    [today release];
-    
-    pollingTimer = [NSTimer scheduledTimerWithTimeInterval:kPollingInterval
-                                                    target:self
-                                                  selector:@selector(pollTime)
-                                                  userInfo:nil
-                                                   repeats:YES];
+	NSString *currentTime = [self.dateFormatter stringFromDate:today];
+	self.timerLabel.text = currentTime;
+	[today release];
+
+	pollingTimer = [NSTimer scheduledTimerWithTimeInterval	:kPollingInterval
+							target							:self
+							selector						:@selector(pollTime)
+							userInfo						:nil
+							repeats							:YES];
 }
 
-- (IBAction)hideClock:(id)sender {
-    
-    if ([self respondsToSelector:@selector(presentingViewController)]) {
-        // Reference UIViewController.h Line:179 for update to iOS 5 difference - @RandyMcMillan
-        [[self presentingViewController] dismissViewControllerAnimated:YES completion:nil];
-    } else {
-        [[self parentViewController] dismissModalViewControllerAnimated:YES];
-    }
- 
-    
-    
-    
-}
-
-
-- (IBAction)tweetTapped:(id)sender {
-    
-    if ([TWTweetComposeViewController canSendTweet])
-    {
-        TWTweetComposeViewController *tweetSheet = [[TWTweetComposeViewController alloc] init];
-        [tweetSheet setInitialText:@"#ThatWasEZ"];
-        
-        if (self.imageString)
-        {
-            [tweetSheet addImage:[UIImage imageNamed:self.imageString]];
-        }
-        
-        if (self.urlString)
-        {
-            [tweetSheet addURL:[NSURL URLWithString:self.urlString]];
-        }
-        
-	    [self presentModalViewController:tweetSheet animated:YES];
-    }
-    else
-    {
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Sorry"
-                                                            message:@"You can't send a tweet right now, make sure your device has an internet connection and you have at least one Twitter account setup"
-                                                           delegate:self
-                                                  cancelButtonTitle:@"OK"
-                                                  otherButtonTitles:nil];
-        [alertView show];
-    }
-}
-
-- (void)dealloc 
+- (IBAction)hideClock:(id)sender
 {
-    [timerLabel release];
-    [pollingTimer invalidate];
-    pollingTimer = nil;
-    [dateFormatter release];
-    [super dealloc];
+	if ([self respondsToSelector:@selector(presentingViewController)]) {
+		// Reference UIViewController.h Line:179 for update to iOS 5 difference - @RandyMcMillan
+		[[self presentingViewController] dismissViewControllerAnimated:YES completion:nil];
+	} else {
+		[[self parentViewController] dismissModalViewControllerAnimated:YES];
+	}
+}
+
+- (IBAction)tweetTapped:(id)sender
+{
+	if ([TWTweetComposeViewController canSendTweet]) {
+		TWTweetComposeViewController *tweetSheet = [[TWTweetComposeViewController alloc] init];
+		[tweetSheet setInitialText:@"#ThatWasEZ"];
+
+		if (self.imageString) {
+			[tweetSheet addImage:[UIImage imageNamed:self.imageString]];
+		}
+
+		if (self.urlString) {
+			[tweetSheet addURL:[NSURL URLWithString:self.urlString]];
+		}
+
+		[self presentModalViewController:tweetSheet animated:YES];
+	} else {
+		UIAlertView *alertView = [[UIAlertView alloc]	initWithTitle		:@"Sorry"
+														message				:@"You can't send a tweet right now, make sure your device has an internet connection and you have at least one Twitter account setup"
+														delegate			:self
+														cancelButtonTitle	:@"OK"
+														otherButtonTitles	:nil];
+		[alertView show];
+	}
+}
+
+- (void)dealloc
+{
+	[timerLabel release];
+	[pollingTimer invalidate];
+	pollingTimer = nil;
+	[dateFormatter release];
+	[super dealloc];
 }
 
 - (void)viewDidUnload
 {
-    [self setTimerLabel:nil];
-    [super viewDidUnload];
+	[self setTimerLabel:nil];
+	[super viewDidUnload];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+	return YES;//interfaceOrientation == UIInterfaceOrientationPortrait;
 }
 
 - (void)didReceiveMemoryWarning
 {
-    [super didReceiveMemoryWarning];
+	[super didReceiveMemoryWarning];
 }
 
 @end
