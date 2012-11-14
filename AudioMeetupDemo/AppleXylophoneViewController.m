@@ -8,12 +8,20 @@
 
 #import "AppleXylophoneViewController.h"
 #import "UIImage+PDF.h"
+#import <Twitter/Twitter.h>
+#import "TweetButton.h"
 
+@interface AppleXylophoneViewController ()
+//@property (strong, nonatomic) NSString *imageString;
+//@property (strong, nonatomic) NSString *urlString;
+@end
 
 @implementation AppleXylophoneViewController
 
 @synthesize mixerHost;
-
+@synthesize urlString;
+@synthesize imageString;
+@synthesize tweetBtn;
 
 - (void)dealloc {
     [super dealloc];
@@ -28,6 +36,8 @@
     [super viewDidLoad];
    
     
+    [tweetBtn useInitStyle];
+    [tweetBtn useInitStyleImage];
     
     
     UIImageView *buttonImageView = [[ UIImageView alloc ] initWithImage:[ UIImage originalSizeImageWithPDFNamed:@"ThatWasEZ.pdf"  ]];
@@ -71,6 +81,35 @@
 
 }
 
+- (IBAction)tweetTapped:(id)sender {
+    
+    if ([TWTweetComposeViewController canSendTweet])
+    {
+        TWTweetComposeViewController *tweetSheet = [[TWTweetComposeViewController alloc] init];
+        [tweetSheet setInitialText:@"Tweeting from iOS 5 By Tutorials! :)"];
+        
+        if (self.imageString)
+        {
+            [tweetSheet addImage:[UIImage imageNamed:self.imageString]];
+        }
+        
+        if (self.urlString)
+        {
+            [tweetSheet addURL:[NSURL URLWithString:self.urlString]];
+        }
+        
+	    [self presentModalViewController:tweetSheet animated:YES];
+    }
+    else
+    {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Sorry"
+                                                            message:@"You can't send a tweet right now, make sure your device has an internet connection and you have at least one Twitter account setup"
+                                                           delegate:self
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+        [alertView show];
+    }
+}
 
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)

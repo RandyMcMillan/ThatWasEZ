@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MixerHostAudio.h"
-
+@class TweetButton;
 #define KEY_COUNT 6
 
 @interface AppleXylophoneViewController : UIViewController {
@@ -23,13 +23,19 @@
     IBOutlet UILabel *label5;
     
     IBOutlet UIImageView *imageView;
- 
+    IBOutlet TweetButton *tweetBtn;
+    
 }
 
 @property (nonatomic, assign) MixerHostAudio *mixerHost;
 
+@property (nonatomic,retain) NSString *imageString;
+@property (nonatomic,retain) NSString *urlString;
+@property (nonatomic,retain) TweetButton *tweetBtn;
+
 - (int)keyIndexForTouch:(UITouch *)touch;
 - (IBAction) mixerOutputGainChanged: (UISlider *) sender;
 - (void)drawRects;
+- (IBAction)tweetTapped:(id)sender;
 
 @end

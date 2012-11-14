@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4815AD761653229C00CB54B5 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4815AD751653229C00CB54B5 /* Twitter.framework */; };
+		4815AD7B1653250500CB54B5 /* TweetButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4815AD781653250500CB54B5 /* TweetButton.bundle */; };
+		4815AD7C1653250500CB54B5 /* TweetButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4815AD7A1653250500CB54B5 /* TweetButton.m */; };
 		4867316C16253F9100DBAA56 /* EZButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4867316916253F9100DBAA56 /* EZButton.bundle */; };
 		4867316D16253F9100DBAA56 /* EZButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4867316B16253F9100DBAA56 /* EZButton.m */; };
 		48673178162546F700DBAA56 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 48673171162546F700DBAA56 /* NSString+MD5.m */; };
@@ -56,6 +59,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4815AD751653229C00CB54B5 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		4815AD781653250500CB54B5 /* TweetButton.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TweetButton.bundle; path = TweetButton/TweetButton.bundle; sourceTree = "<group>"; };
+		4815AD791653250500CB54B5 /* TweetButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TweetButton.h; path = TweetButton/TweetButton.h; sourceTree = "<group>"; };
+		4815AD7A1653250500CB54B5 /* TweetButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TweetButton.m; path = TweetButton/TweetButton.m; sourceTree = "<group>"; };
 		4867316916253F9100DBAA56 /* EZButton.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = EZButton.bundle; path = EZButton/EZButton.bundle; sourceTree = "<group>"; };
 		4867316A16253F9100DBAA56 /* EZButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EZButton.h; path = EZButton/EZButton.h; sourceTree = "<group>"; };
 		4867316B16253F9100DBAA56 /* EZButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EZButton.m; path = EZButton/EZButton.m; sourceTree = "<group>"; };
@@ -121,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4815AD761653229C00CB54B5 /* Twitter.framework in Frameworks */,
 				4C79ACA4139133D80084E6A8 /* Foundation.framework in Frameworks */,
 				4C227AE013A6E7120054213E /* AudioToolbox.framework in Frameworks */,
 				4C227ADA13A6E6960054213E /* AVFoundation.framework in Frameworks */,
@@ -202,6 +210,7 @@
 		4C79AC92139133D80084E6A8 = {
 			isa = PBXGroup;
 			children = (
+				4815AD751653229C00CB54B5 /* Twitter.framework */,
 				48FBA44E1626914E0035CDD3 /* Default-Landscape@2x~ipad.png */,
 				48FBA44A1626908B0035CDD3 /* Default-Landscape~ipad.png */,
 				48FBA448162690600035CDD3 /* ThatWasEZ@2x.png */,
@@ -251,6 +260,9 @@
 				4C227AC813A6E4AB0054213E /* AppleXylophoneViewController.h */,
 				4C227AC913A6E4AB0054213E /* AppleXylophoneViewController.m */,
 				4C227ACA13A6E4AB0054213E /* AppleXylophoneViewController.xib */,
+				4815AD781653250500CB54B5 /* TweetButton.bundle */,
+				4815AD791653250500CB54B5 /* TweetButton.h */,
+				4815AD7A1653250500CB54B5 /* TweetButton.m */,
 				4C79ACB3139133D90084E6A8 /* MainWindow.xib */,
 				4C227ADC13A6E6B20054213E /* MixerHostAudio.h */,
 				4C227ADD13A6E6B20054213E /* MixerHostAudio.m */,
@@ -351,6 +363,7 @@
 				48FBA44F1626914E0035CDD3 /* Default-Landscape@2x~ipad.png in Resources */,
 				48FBA450162691D30035CDD3 /* Default.png in Resources */,
 				48FBA451162691EC0035CDD3 /* Default@2x.png in Resources */,
+				4815AD7B1653250500CB54B5 /* TweetButton.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +383,7 @@
 				48673179162546F700DBAA56 /* PDFView.m in Sources */,
 				4867317A162546F700DBAA56 /* UIImage+PDF.m in Sources */,
 				4867317B162546F700DBAA56 /* UIView+Image.m in Sources */,
+				4815AD7C1653250500CB54B5 /* TweetButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
