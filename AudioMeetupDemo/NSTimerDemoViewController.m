@@ -46,7 +46,8 @@
 	}
 
 	[tweetBtn useInitStyle];
-
+    [closeBtn useInitStyle];
+    [closeBtn useInitStyleImage];
 	[super viewDidLoad];
 	NSDate *today = [[NSDate alloc] init];
 	dateFormatter = [[NSDateFormatter alloc] init];

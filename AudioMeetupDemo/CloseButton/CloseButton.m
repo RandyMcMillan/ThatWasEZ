@@ -19,6 +19,7 @@
 //
 
 #import "CloseButton.h"
+#import "UIImage+PDF.h"
 
 @interface CloseButton ()
 @property (nonatomic, readonly) CGGradientRef   normalGradient;
@@ -145,12 +146,45 @@
     self.cornerRadius   = 5.0f;
     self.strokeColor    = [UIColor darkGrayColor];
     self.strokeWeight   = 0.1f;
-    [self setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];         // For NavBars//Buttons//etc
-    [self setTitleColor:[UIColor darkGrayColor] forState:UIControlStateHighlighted];    // For NavBars//Buttons//etc
+    [self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];         // For NavBars//Buttons//etc
+    [self setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];    // For NavBars//Buttons//etc
 }                                                                                       /* useInitStyle */
 
 - (void)useInitStyleImage
 {
+    
+    
+    /* Draw a growing line of buttons to demonstate the scaling
+	 */
+	float kInset = 4;
+	float kSpacing = 21;
+	float buttonY = kSpacing;
+    
+	for( float i = 0; i < 1; i++ )
+	{
+		/* Always round up coordinates before passing them into UIKit
+		 */
+		float buttonWidth = 44;//ceilf( 22 * sqrtf( i + 1 ));
+		
+		CGSize buttonSize = CGSizeMake( buttonWidth+30, buttonWidth );
+		//UIButton *yingYangButton = [ UIButton buttonWithType:UIButtonTypeRoundedRect ];
+		self.frame = CGRectMake( kSpacing, buttonY, buttonSize.width, buttonSize.height );
+		
+		/* Inset the button image
+		 */
+		//CGSize imageSize = CGSizeMake( buttonSize.width - kInset * 2, buttonSize.height - kInset * 2 );
+        CGSize imageSize = CGSizeMake( buttonSize.height - kInset * 2, buttonSize.height - kInset * 2 );//change to height preserves square image
+	
+		/* Set the button image from the PDF asset.
+		 */
+        [ self setImage:[ UIImage imageWithPDFNamed:@"ThatWasEZ.pdf" atSize:imageSize ] forState:UIControlStateNormal ];
+        
+        //[ self.view addSubview:yingYangButton ];
+		
+		buttonY += buttonWidth + kSpacing;
+
+    }
+    
     // for buttons/whatever
     // [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"CloseButton.bundle/image1"]] forState:UIControlStateNormal];
 }
