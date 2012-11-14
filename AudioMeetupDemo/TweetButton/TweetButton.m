@@ -113,12 +113,12 @@
 - (void)useInitStyle
 {
     NSMutableArray  *colors = [NSMutableArray arrayWithCapacity:3];
-    UIColor         *color  = [UIColor colorWithRed:0.922 green:0.918 blue:0.929 alpha:1.000];
+    UIColor         *color  = [UIColor blackColor];//[UIColor colorWithRed:0.922 green:0.918 blue:0.929 alpha:1.000];
 
     [colors addObject:(id)[color CGColor]];
-    color = [UIColor colorWithRed:0.922 green:0.918 blue:0.929 alpha:1.000];
+    color = [UIColor blackColor];//[UIColor colorWithRed:0.922 green:0.918 blue:0.929 alpha:1.000];
     [colors addObject:(id)[color CGColor]];
-    color = [UIColor colorWithRed:0.922 green:0.918 blue:0.929 alpha:1.000];
+    color = [UIColor blackColor];//[UIColor colorWithRed:0.922 green:0.918 blue:0.929 alpha:1.000];
     [colors addObject:(id)[color CGColor]];
     self.normalGradientColors       = colors;
     self.normalGradientLocations    = [NSMutableArray arrayWithObjects:

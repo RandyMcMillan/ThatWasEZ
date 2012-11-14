@@ -215,7 +215,7 @@
 						<string key="NSFrame">{{110, 20}, {260, 260}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="18828028"/>
+						<reference key="NSNextKeyView" ref="680403657"/>
 						<int key="IBUIContentMode">1</int>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
@@ -232,19 +232,18 @@
 						<int key="IBUIContentVerticalAlignment">0</int>
 						<float key="IBUIValue">0.75</float>
 					</object>
-					<object class="IBUIButton" id="18828028">
+					<object class="IBUIButton" id="680403657">
 						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">307</int>
+						<int key="NSvFlags">289</int>
 						<string key="NSFrame">{{387, 15}, {73, 44}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
+						<reference key="IBUIBackgroundColor" ref="23251979"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
 						<object class="NSColor" key="IBUIHighlightedTitleColor">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MQA</bytes>
@@ -256,6 +255,10 @@
 						<object class="NSColor" key="IBUINormalTitleShadowColor">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MC41AA</bytes>
+						</object>
+						<object class="NSCustomResource" key="IBUINormalImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">image1.png</string>
 						</object>
 						<object class="IBUIFontDescription" key="IBUIFontDescription">
 							<int key="type">2</int>
@@ -352,7 +355,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">tweetBtn</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="18828028"/>
+						<reference key="destination" ref="680403657"/>
 					</object>
 					<int key="connectionID">22</int>
 				</object>
@@ -368,7 +371,7 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">tweetTapped:</string>
-						<reference key="source" ref="18828028"/>
+						<reference key="source" ref="680403657"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">7</int>
 					</object>
@@ -399,7 +402,7 @@
 							<reference ref="938456971"/>
 							<reference ref="348375537"/>
 							<reference ref="790537734"/>
-							<reference ref="18828028"/>
+							<reference ref="680403657"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -456,7 +459,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">20</int>
-						<reference key="object" ref="18828028"/>
+						<reference key="object" ref="680403657"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</object>
@@ -649,6 +652,10 @@
 		</object>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
+		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
+			<string key="NS.key.0">image1.png</string>
+			<string key="NS.object.0">{44, 38}</string>
+		</object>
 		<string key="IBCocoaTouchPluginVersion">1930</string>
 	</data>
 </archive>

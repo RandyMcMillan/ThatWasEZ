@@ -35,9 +35,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
+   
+    
+    
     
     [tweetBtn useInitStyle];
-    [tweetBtn useInitStyleImage];
+    // [tweetBtn useInitStyleImage];
     
     
     UIImageView *buttonImageView = [[ UIImageView alloc ] initWithImage:[ UIImage originalSizeImageWithPDFNamed:@"ThatWasEZ.pdf"  ]];
@@ -86,7 +89,7 @@
     if ([TWTweetComposeViewController canSendTweet])
     {
         TWTweetComposeViewController *tweetSheet = [[TWTweetComposeViewController alloc] init];
-        [tweetSheet setInitialText:@"Tweeting from iOS 5 By Tutorials! :)"];
+        [tweetSheet setInitialText:@"#ThatWasEZ"];
         
         if (self.imageString)
         {
